@@ -1,4 +1,4 @@
-FROM openjdk:11-jre
+FROM openjdk:11-jdk
 
 ENV JETTY_VERSION 9.4.32.v20200930
 ENV JETTY_HOME /usr/local/jetty
