@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  maven:
+    build: ./rhjoerg-docker-maven
+    container_name: rhjoerg-docker-maven
+    volumes:
+        - type: bind
+          source: $DOCKER_DATA/rhjoerg-docker-maven
+          target: /data
