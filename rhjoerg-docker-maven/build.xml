@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="rhjoerg-docker-maven">
+	
+	<property environment="env" />
+
+	<target name="docker-build">
+		<exec executable="${env.DOCKER_HOME}/resources/docker.exe">
+			<arg value="build" />
+			<arg value="--tag" />
+			<arg value="rhjoerg-docker-maven" />
+			<arg value="--force-rm" />
+			<arg value="." />
+		</exec>
+	</target>
+	
+</project>
